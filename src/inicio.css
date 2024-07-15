@@ -1,0 +1,145 @@
+  
+.kl{
+    margin-left: auto;
+    margin-right: auto;
+     width: 105%;
+     height: 100vh;
+     box-sizing:border-box !important;
+     display: flex;
+     justify-content: flex-start;
+       background-color: rgb(46, 46, 46);
+     flex-wrap: wrap;
+     align-content: flex-start;
+ }
+ .conform{
+     width: 100%;
+     height: 1000px;
+     background-color: rgb(46, 46, 46);
+     padding: 0 30px 0 40px ;
+ }
+ 
+ .yo{
+     background-color: red !important;
+ }
+ .google{
+     background-color: white !important;
+     color: black !important;
+ }
+ .sho{
+     background-color:  #2d5f2a  !important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .nmm{
+     background-color: black;
+     width: 75%;
+     height: 300px;
+      border: solid white 1px;
+      box-shadow: 1px 1px 10px 1px rgb(108, 213, 241);
+      display: flex;
+      flex-direction: column;
+      
+      transition:  1s ease-in; 
+     }
+ 
+  .fg{
+     background-color: rgb(85, 151, 182) ;
+  }   
+ .nmm:hover{
+     background-color: rgb(85, 151, 182);
+ 
+ }
+ .fac{
+     background-color: #7fa7db; 
+     color: white;  
+     border: none;
+     height: 35px;
+     width: 100px;
+     text-align: center;
+     text-decoration: none;
+      margin: 0 auto;
+     cursor: pointer;
+     border-radius: 5px; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ 
+ 
+ }
+ 
+ .pri{
+     width: 100%;
+     height: 30%;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .pri > img{
+     width: 80px;
+     height: 80px;
+     margin-top: 10px;
+     transition-duration: 3s;
+     
+     
+ }
+ 
+ .pri > img:hover{
+     transform: rotate(360deg);
+ 
+ }
+ 
+ .unocon{
+      
+     width: 32%;
+     height: auto;
+     border-radius: 5px;
+     padding: 10px;
+     padding-top: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     min-width: none;
+     
+    
+ }
+ 
+ .car{
+     width: 50%;
+     height: 50px;
+     
+     margin-left: auto;
+     margin-right: auto;
+     
+ }
+ .car > marquee{
+     color: rgb(96, 28, 205);
+     font-size: 30px;
+ }
+ 
+ .unocon > textarea{
+     width: 100%;
+     height: 100%;
+     border: 0;
+     outline: 0;
+      
+     
+ }
+ 
+ .descripcionh1{
+     color: red;
+ }
+ 
+ .dd{
+     padding: 10px;
+ }
+ 
+ .dd >p {
+     color: #dad9d9;
+     font-weight: 10;
+     font-size: 12px;
+     font-family: 'Courier New', Courier, monospace;
+ 
+ }
