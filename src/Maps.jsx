@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import "./nuevo.css"
+import "./nuevo.css";
+
 const Maps = () => {
     const [userLocation, setUserLocation] = useState(null);
     const [geoError, setGeoError] = useState(null);
@@ -64,7 +65,13 @@ const Maps = () => {
             }
         });
     };
-    
+
+    const handleShare = (restaurant) => {
+        const phoneNumber = '+528135654041';
+        const message = encodeURIComponent(`Este lugar es recomendado: ${restaurant.name} - ${restaurant.vicinity}`);
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+        window.open(whatsappUrl, '_blank');
+    };
 
     return (
         <div>
@@ -72,23 +79,19 @@ const Maps = () => {
             {geoError ? (
                 <p>{geoError}. Por favor, permita el acceso a la ubicación y recargue la página.</p>
             ) : (
-               
                 <div>
                     <h3>Restaurantes Cercanos:</h3>
                     {restaurants.length > 0 ? (
                         <ul>
                             {restaurants.map((restaurant) => (
-                                <div className='nn'>  
-                                <div className="arriba">  
-                                <img src={restaurant.icon} alt="" />
-
-                                <li key={restaurant.place_id}>
-                                    {console.log(restaurant.icon)}
-                                    {restaurant.name} - {restaurant.vicinity}  
-                                    
-                                </li> 
-                                </div>
-                                <button className='bbn'>compartir</button>
+                                <div className='nn' key={restaurant.place_id}>  
+                                    <div className="arriba">  
+                                        <img src={restaurant.icon} alt="" />
+                                        <li>
+                                            {restaurant.name} - {restaurant.vicinity}
+                                        </li> 
+                                    </div>
+                                    <button className='bbn' onClick={() => handleShare(restaurant)}>Compartir</button>
                                 </div>
                             ))}
                         </ul>
@@ -96,7 +99,6 @@ const Maps = () => {
                         <p>Buscando restaurantes cercanos...</p>
                     )}
                 </div>
-                 
             )}
         </div>
     );
