@@ -15,7 +15,7 @@ function App() {
   return (
     < BrowserRouter>  
       <Routes>  
-      <Route path='/' element={<Maps/>} />
+      <Route path='/' element={<Formulario/>} />
       {c && c.length > 0 ? (
                <Route path='/inicio' element={<Formulario/>} />
             ) : null}    
