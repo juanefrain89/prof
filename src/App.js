@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login';
-import Login from './components/Formulario';
+import Formulario from './components/Formulario';
 import { BrowserRouter, Routes, Route,HashRouter} from 'react-router-dom';
 import Inicio from './Inicio';
 import Maps from './Maps';
