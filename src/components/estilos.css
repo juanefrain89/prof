@@ -176,4 +176,7 @@ textarea {
   .inputContainer {
     height: 65px;
   }
+  .form{
+    margin-top: -10px;
+  }
 }
